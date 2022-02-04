@@ -113,3 +113,5 @@ LOGOUT_REDIRECT_URL = 'index'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# HABILITAR  heroku config:set DISABLE_COLLECTSTATIC=1
