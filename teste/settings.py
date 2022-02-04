@@ -13,11 +13,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['https://uni-tst.herokuapp.com/']
 
-# DEBUG = True
-
-# ALLOWED_HOSTS = ['*']
-
-
 # Application definition
 
 INSTALLED_APPS = [
