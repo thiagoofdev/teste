@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
     
@@ -18,7 +19,7 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Funcionário</th>
+                            <th>Atendente</th>
                             <th>Setor</th>
                             <th>Função</th>
                             <th>Telefone</th>
@@ -34,8 +35,8 @@
                             <td>Mecânico</td>
                             <td>21 983928328</td>
                             <td>pedro@email.com</td>
-                            <td><a href="#"><img src="static/image/lupa.png" alt="" style="width: 25px; height: auto;"></a></td>
-                            <td><a href="#"><img src="static/image/lapis.png" alt="" style="width: 25px; height: auto;"></a></td>
+                            <td><a href="#"><img src="{% static 'images/view.jpg' %}"></a></td>
+                            <td><a href="#"><img src="{% static 'images/update.png' %}"></a></td>
                         </tr>
                         <tr>
                             <td>Tiago</td>
@@ -43,8 +44,8 @@
                             <td>Aux. Administrativo</td>
                             <td>21 978372738</td>
                             <td>tiago@email.com</td>
-                            <td><a href="#"><img src="static/image/lupa.png" alt="" style="width: 25px; height: auto;"></a></td>
-                            <td><a href="#"><img src="static/image/lapis.png" alt="" style="width: 25px; height: auto;"></a></td>
+                            <td><a href="#"><img src="{% static 'images/view.png' %}" style="width: 100px; height: auto;"></a></td>
+                            <td><a href="#"><img src="{% static 'images/update.png' %}"></a></td>
                         </tr>
                         <tr>
                             <td>João</td>
@@ -52,8 +53,8 @@
                             <td>Aux. de Faturamento</td>
                             <td>21 984728374</td>
                             <td>joao@email.com</td>
-                            <td><a href="#"><img src="static/image/lupa.png" alt="" style="width: 25px; height: auto;"></a></td>
-                            <td><a href="#"><img src="static/image/lapis.png" alt="" style="width: 25px; height: auto;"></a></td>
+                            <td><a href="#"><img src="{% static 'images/view.png' %}"></a></td>
+                            <td><a href="#"><img src="{% static 'images/update.png' %}"></a></td>
                         </tr>
                     </tbody>
                 </table>

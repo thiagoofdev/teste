@@ -7,3 +7,5 @@ __pycache
 .idea 
 
 .venv
+
+.DS_Store
