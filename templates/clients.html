@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+    {% if user.is_anonymous %}
+        <a href="{% url 'login' %}"> Login </a>        
+        
+        {% else %}
+            <a class="nav-link container mb-3" style="text-decoration: underline;" aria-current="page" href="#">
+                    <img src="#" alt="" style="width: 30px; height: auto;">
+                    Novo Cliente
+            </a>
+                
+            
+            <!-- table -->
+            <div class="container mb-2">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Cliente</th>
+                                    <th>Telefone</th>
+                                    <th>E-mail</th>
+                                    <th>Visualizar</th>
+                                    <th>Editar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>João da Couvês</td>
+                                    <td>21 983747372</td>
+                                    <td>joaocouves@email.com</td>
+                                    <td><a href="#"><img src="static/image/lupa.png" alt="" style="width: 25px; height: auto;"></a></td>
+                                    <td><a href="#"><img src="static/image/lapis.png" alt="" style="width: 25px; height: auto;"></a></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Joaquim da Padaria</td>
+                                    <td>21 973984763</td>
+                                    <td>joaquim@email.com</td>
+                                    <td><a href="#"><img src="static/image/lupa.png" alt="" style="width: 25px; height: auto;"></a></td>
+                                    <td><a href="#"><img src="static/image/lapis.png" alt="" style="width: 25px; height: auto;"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Rocha Matos</td>
+                                    <td>21 986383748</td>
+                                    <td>rm@email.com</td>
+                                    <td><a href="#"><img src="static/image/lupa.png" alt="" style="width: 25px; height: auto;"></a></td>
+                                    <td><a href="#"><img src="static/image/lapis.png" alt="" style="width: 25px; height: auto;"></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    {% endif %}
+{% endblock %}

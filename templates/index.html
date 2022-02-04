@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        {% if user.is_anonymous %}
+        <a href="{% url 'login' %}"> Login </a>        
+        
+        {% else %}
+                <a class="nav-link container mb-3" style="text-decoration: underline;" aria-current="page" href="#">
+                        <img src="#" alt="" style="width: 30px; height: auto;">
+                        Novo Relatório
+                </a>
+              
+          
+              <!-- table -->
+              <div class="container mb-2">
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <table class="table">
+                              <thead>
+                                  <tr>
+                                      <th>ID</th>
+                                      <th>Cliente</th>
+                                      <th>Serviço</th>
+                                      <th>Valor</th>
+                                      <th>Funcionário</th>
+                                      <th>Data</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>1</td>
+                                      <td>João da Couvês</td>
+                                      <td>Lanternagem</td>
+                                      <td>300,00</td>
+                                      <td>Chico</td>
+                                      <td>20/01/2022</td>
+                                  </tr>
+                                  <tr>
+                                      <td>2</td>
+                                      <td>Joaquim da Padaria</td>
+                                      <td>Troca de Óleo</td>
+                                      <td>100,00</td>
+                                      <td>Fred</td>
+                                      <td>16/01/2022</td>
+                                  </tr>
+                                  <tr>
+                                      <td>3</td>
+                                      <td>Rocha Matos</td>
+                                      <td>Elétrica</td>
+                                      <td>250,00</td>
+                                      <td>Frank</td>
+                                      <td>5/01/2022</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+        {% endif %}
+{% endblock %}

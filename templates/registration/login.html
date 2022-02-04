@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="POST" autocomplete="off" class="form-signin">
+        {% csrf_token %}
+        <label for="" class="sr-only">Usuário</label>
+        <input type="text" name="username" class="form-control mb-3" required autofocus>
+
+        <label for="" class="sr-only">Senha</label>
+        <input type="password" name="password" class="form-control mb-3" required>
+
+        <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+    </form>
+{% endblock %}
