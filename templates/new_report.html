@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <!-- Form -->
+    <form class="container mt-4 pt-4 col-sm-6">
+        <div class="form-group">
+            <label class="mt-3" for="formGroupExampleInput">Cliente</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+        </div>
+        <div class="form-group">
+            <label class="mt-3" for="inputState">Serviço</label>
+            <select id="inputState" class="form-control">
+                <option autofocus>---</option>
+                <option>Troca de Óleo</option>
+                <option>Lanternagem</option>
+                <option>Elétrica</option>
+                <option>Pintura</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="mt-3" for="formGroupExampleInput2">Valor</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2">
+        </div>
+        <div class="form-group">
+            <label class="mt-3" for="formGroupExampleInput2">Funcionário</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2">
+        </div>
+    </form>
+
+{% endblock %}

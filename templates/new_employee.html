@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Form -->
+    <form class="container col-md-6">
+
+    <br>
+
+        <h5>Informações Pessoais</h5>
+            <div class="row">
+
+            <div class="form-group">
+                <label for="inputAddress">Nome Completo</label>
+                <input type="text" class="form-control" id="inputAddress">
+            </div>
+
+            <div class="form-group col-6">
+                <label for="inputEmail4">CPF</label>
+                <input type="email" class="form-control" id="inputEmail4" >
+            </div>
+
+            <div class="form-group col-3">
+                <label for="inputPassword4">Data de Nascimento</label>
+                <input type="password" class="form-control" id="inputPassword4" >
+            </div>
+
+            <div class="form-group col-3">
+                <label for="inputPassword4">Sexo</label>
+                <input type="password" class="form-control" id="inputPassword4" >
+            </div>
+
+            <div class="form-group col-6">
+                <label for="inputEmail4">Telefone</label>
+                <input type="email" class="form-control" id="inputEmail4" >
+            </div>
+
+            <div class="form-group col-6">
+                <label for="inputEmail4">E-mail</label>
+                <input type="email" class="form-control" id="inputEmail4" >
+            </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <h5>Endereço</h5>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="inputCity">UF</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+
+            <div class="form-group col-sm-6">
+                <label for="inputCity">Cidade</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+
+            <div class="form-group col-8">
+                <label for="inputAddress">Rua</label>
+                <input type="text" class="form-control" id="inputAddress" >
+            </div>
+
+            <div class="form-group col-4">
+                <label for="inputAddress2">Número</label>
+                <input type="text" class="form-control" id="inputAddress2" >
+            </div>
+
+            <div class="form-group">
+                <label for="inputZip">CEP</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+        </div>
+
+        <br>
+
+        <h5>Ocupação</h5>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="inputCity">Departamento</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+
+            <div class="form-group col-sm-6">
+                <label for="inputCity">Função</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Cadastrar</button>
+    </form>
+
+    <br><br>
+{% endblock %}
